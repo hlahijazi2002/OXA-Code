@@ -1,4 +1,4 @@
-import { Zap } from "lucide-react";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -9,7 +9,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-2 font-black text-2xl mb-6 justify-start">
-              <Zap className="text-blue-500 fill-blue-500" size={32} />
+              <Image
+                src="/logo1.png"
+                alt="Oxa code"
+                width={50}
+                height={50}
+                priority
+              />
               <span className="text-white">
                 <span className="text-blue-500 text-glow">OXA</span> Code
               </span>
@@ -98,18 +104,20 @@ export default function Footer() {
         </div>
 
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-600 text-sm">
-          <p>© 2026 جميع الحقوق محفوظة .</p>
-          <p className="font-medium tracking-wide">
-            من غزة للعالم -{" "}
-            {/* <a
+          <p>
+            جميع الحقوق محفوظة {new Date().getFullYear()}&copy;
+            <br />
+            تم تطويره بإستخدام Next.js{" "}
+            <a
               href="https://my-portfolio-topaz-two-24.vercel.app/"
               className="text-blue-500"
               target="_blank"
             >
               المهندسة هلا حجازي
-            </a>{" "} */}
-            🇵🇸
+            </a>
           </p>
+
+          <p className="font-medium tracking-wide">من غزة للعالم - 🇵🇸</p>
         </div>
       </div>
     </footer>

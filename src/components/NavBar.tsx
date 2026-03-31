@@ -1,7 +1,8 @@
 "use client";
 import { useState } from "react";
-import { Zap, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,10 +15,16 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 w-full z-[100] px-6 py-4" dir="rtl">
+    <nav className="fixed top-0 w-full z-100 px-6 py-4" dir="rtl">
       <div className="max-w-7xl mx-auto bg-black/40 backdrop-blur-xl border border-white/10 rounded-3xl px-6 h-16 flex items-center justify-between">
         <div className="flex items-center gap-2 font-black text-xl tracking-tighter">
-          <Zap className="text-blue-500 fill-blue-500" size={24} />
+          <Image
+            src="/logo1.png"
+            alt="Oxa code"
+            width={40}
+            height={40}
+            priority
+          />
           <span className="text-white">
             <span className="text-blue-500">OXA</span> Code
           </span>
@@ -60,7 +67,7 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="absolute top-24 left-6 right-6 bg-[#020617]/95 backdrop-blur-2xl border border-white/10 rounded-[2rem] p-8 md:hidden shadow-3xl text-right"
+            className="absolute top-24 left-6 right-6 bg-[#020617]/95 backdrop-blur-2xl border border-white/10 rounded-4xl p-8 md:hidden shadow-3xl text-right"
           >
             <div className="flex flex-col gap-6">
               {navLinks.map((link) => (

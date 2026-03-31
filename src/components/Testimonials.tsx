@@ -30,21 +30,18 @@ export default function Testimonials() {
           }}
           whileHover={{ animationPlayState: "paused" }}
         >
-          {reviews.map((rev, i) => (
+          {allReviews.map((rev, i) => (
             <motion.div
               key={i}
-              className="min-w-[150px] md:min-w-[200px] h-[200px] snap-center bg-white/5 border border-white/10 p-6 rounded-[2rem] flex flex-col relative group hover:border-blue-500/40 transition-all"
+              className="min-w-37.5 md:min-w-50 h-50 snap-center bg-white/5 border border-white/10 p-6 rounded-4xl flex flex-col relative group hover:border-blue-500/40 transition-all"
             >
-              <Quote
-                className="text-blue-500/20 mb-3 flex-shrink-0"
-                size={28}
-              />
-              <p className="text-gray-300 text-sm md:text-[15px] leading-relaxed text-right flex-grow overflow-hidden">
+              <Quote className="text-blue-500/20 mb-3 shrink-0" size={28} />
+              <p className="text-gray-300 text-sm md:text-[15px] leading-relaxed text-right grow overflow-hidden">
                 {rev.text}
               </p>
 
               <div className="flex items-center gap-3 flex-row-reverse mt-auto pt-4 border-t border-white/5">
-                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 flex-shrink-0 shadow-lg shadow-blue-500/20" />
+                <div className="w-10 h-10 rounded-xl bg-linear-to-br from-blue-500 to-purple-600 shrink-0 shadow-lg shadow-blue-500/20" />
                 <div className="text-right overflow-hidden">
                   <h4 className="font-bold text-white text-sm truncate">
                     {rev.name}

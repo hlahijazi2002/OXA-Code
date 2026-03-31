@@ -54,24 +54,30 @@ export const reviews = [
 
 export const projects = [
   {
-    title: "منصة تجارة إلكترونية",
+    title: "الواجهة الخلفية للوحة التحكم باستخدام Laravel",
+    type: "لوحة تحكم",
+    img: "p-5.png",
+  },
+
+  {
+    title: "لوحة تحكم إدارية متعددة الصفحات",
+    type: "لوحة تحكم",
+    img: "/p-2.jpg",
+  },
+  {
+    title: "تطبيق تواصل اجتماعي",
+    type: "تطبيق",
+    img: "p-3.jpg",
+  },
+  {
+    title: "تطبيق جوال بسيط وسريع الاستجابة للتسوق الإلكتروني",
+    type: "تصميم",
+    img: "p-4.jpg",
+  },
+  {
+    title: "مشروع واجهة أمامية",
     type: "ويب سايت",
-    img: "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=500",
-  },
-  {
-    title: "منصة تجارة لوجستية",
-    type: "تصميم ",
-    img: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=500",
-  },
-  {
-    title: "تطبيق إدارة مهام",
-    type: "نظام إداري",
-    img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=500",
-  },
-  {
-    title: "موقع عقارات مودرن",
-    type: "ويب سايت",
-    img: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=500",
+    img: "/p-1.png",
   },
 ];
 
