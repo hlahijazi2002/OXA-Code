@@ -4,19 +4,35 @@
   --background: 222.2 84% 4.9%;
   --foreground: 210 40% 98%;
 }
+
+html, body {
+  /* حماية قصوى للعرض */
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   background-color: #020617;
   color: #ffffff;
-  overflow-x: hidden;
+  /* منع أي اهتزاز في العرض */
+  -webkit-overflow-scrolling: touch;
 }
 
+/* تعديل الـ sections لضمان عدم دفع المحتوى */
 section {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 5rem; /* استخدمي rem أفضل من px للموبايل */
+  width: 100%;
+  overflow: hidden; /* يمنع أي عنصر داخل السكشن إنه يطلع برة */
 }
 
+/* Scrollbar styling */
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -24,6 +40,7 @@ section {
   background: #2563eb;
   border-radius: 10px;
 }
+
 @layer utilities {
   .scrollbar-hide::-webkit-scrollbar {
     display: none;

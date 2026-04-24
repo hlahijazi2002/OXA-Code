@@ -116,7 +116,6 @@ export default function Footer() {
               المهندسة هلا حجازي
             </a>
           </p>
-
           <p className="font-medium tracking-wide">من غزة للعالم - 🇵🇸</p>
         </div>
       </div>

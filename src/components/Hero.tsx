@@ -13,7 +13,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
-          className="relative order-first lg:order-last flex justify-center"
+          className="relative order-first lg:order-last flex justify-center hidden md:block"
         >
           <div className="relative w-full max-w-125 aspect-square group">
             <div className="absolute inset-0 bg-linear-to-tr from-blue-500/20 to-purple-500/20 rounded-[3rem] blur-2xl group-hover:blur-3xl transition-all" />
@@ -23,7 +23,7 @@ export default function Hero() {
               width={400}
               height={300}
               priority
-              className="relative z-10 w-full h-full object-contain drop-shadow-[0_20px_50px_rgba(37,99,235,0.2)] animate-float hidden md:block"
+              className="relative  z-10 w-full h-full object-contain drop-shadow-[0_20px_50px_rgba(37,99,235,0.2)] animate-float "
             />
           </div>
         </motion.div>
